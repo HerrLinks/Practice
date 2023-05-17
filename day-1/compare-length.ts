@@ -9,7 +9,14 @@
 // - Otherwise print: "firstArrayOfNumbers is the longer one"
 
 function compareLength(): void {
-  
+  let firstArrayOfNumbers: number[] = [1, 2, 3];
+  let secondArrayOfNumbers: number[] = [4, 5];
+
+  if (secondArrayOfNumbers.length > firstArrayOfNumbers.length) {
+    console.log("secondArrayOfNumbers is longer");
+  } else {
+    console.log("firstArrayOfNumbers is the longer one");
+  }
 }
 
 compareLength();
