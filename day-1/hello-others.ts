@@ -6,11 +6,16 @@
 // Hello, Mary!
 // Hello, Joe!
 
-function helloOthers(): void {
- 
+const names: string[] = ['Esther', 'Mary', 'Joe'];
 
+function helloOthers(names: string[]): string {
+  
+  let greeting: string = '';
+
+  for (let i: number = 0; i < names.length; i++) {
+    greeting += `Hello, ${names[i]}!\n`;
+  }
+  return greeting;
 }
 
-helloOthers();
-
-export { helloOthers }
+console.log(helloOthers(names));
