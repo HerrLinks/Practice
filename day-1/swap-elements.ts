@@ -7,7 +7,11 @@
 //   [third, second, first]
 
 function swapElements(): void {
-  // Write your code here:
+  let orders: string[] = ["first", "second", "third"];
+  let temp: string = orders[0];
+  orders[0] = orders[2];
+  orders[2] = temp;
+  console.log(orders);
 }
 
 swapElements();
