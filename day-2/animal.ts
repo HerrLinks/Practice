@@ -29,3 +29,17 @@ export class Animal {
       this.thirst++;
   }
 }
+
+const dog = new Animal();
+console.log(dog.hunger);
+console.log(dog.thirst);
+
+dog.eat();
+console.log(dog.hunger);
+
+dog.drink();
+console.log(dog.thirst);
+
+dog.play();
+console.log(dog.hunger);
+console.log(dog.thirst);
